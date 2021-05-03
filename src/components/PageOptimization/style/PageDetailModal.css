@@ -21,7 +21,14 @@
     z-index: 9999;
 }
 .main {
-    width: 436px;
+    width: 124px;
+    height: 24px;
+    font-family: CenturyGothic;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    color: #707070;
+    margin: 25px 0 0 10px;
 }
 
 .graph-text {

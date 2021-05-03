@@ -5,11 +5,9 @@ import AllList from './AllList';
 import DetailModal from './DetailModal';
 import { useState, useEffect } from 'react';
 import './style/PageOptimization.css';
-import { fakeData } from './fakeData';
 import axios from 'axios';
 import { FetchOptimizationData, FetchIndicatorData, FetchPage } from './ApiCaller';
 const PageOptimization = () => {
-    // const fakeData = fakeData;
     const [allTasks, setAllTasks] = useState([]); //所有專案優化紀錄
     const [targetTask, setTargetTask] = useState({});
     const [indicatorData, setIndicatorData] = useState(''); //指標數字，如：效能平均
@@ -18,11 +16,13 @@ const PageOptimization = () => {
     const [mostEfficientPage, setMostEfficientPage] = useState(''); //優化效率最高值
     const [openModal, setOpenModal] = useState(false); //開啟modal
     const [projectCount, setProjectCount] = useState(0); //累積優化件數
+    const [pageName, setPageName] = useState('');
 
     //function
     const tagClick = (pageName) => {
         axios.get(`https://kpi-node.herokuapp.com/all-score/${pageName}`).then(({ data }) => {
             setPageData(data);
+            setPageName(pageName);
         });
         setOpenModal(true);
     };
@@ -38,6 +38,7 @@ const PageOptimization = () => {
             setIndicatorData(data.feed.entry[0].gsx$efficiencyaverage.$t);
         });
         FetchPage.then(({ data }) => {
+            console.log(data);
             setPage(data);
         });
     }, []);
@@ -82,6 +83,7 @@ const PageOptimization = () => {
                                     </div>
                                     <DetailModal
                                         setOpenModal={setOpenModal}
+                                        pageName={pageName}
                                         openModal={openModal}
                                         page={page}
                                         pageData={pageData}
