@@ -18,7 +18,7 @@ const PageDetailLineChart = ({ pageData, indicatorName }) => {
                 <YAxis axisLine={false} />
                 <Tooltip />
                 <Legend verticalAlign="bottom" height={20} />
-                <Line type="monotone" dataKey={indicatorName} stroke="#d9812f" activeDot={{ r: 2 }} />
+                <Line type="monotone" dataKey={indicatorName} stroke="#d9812f" activeDot={{ r: 4 }} dot={false} />
             </LineChart>
         </ResponsiveContainer>
     );
