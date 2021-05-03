@@ -10,7 +10,7 @@ import { BrowserRouter, Switch } from 'react-router-dom';
 ReactDOM.render(
     <React.StrictMode>
         <Provider store={store}>
-            <BrowserRouter basename={process.env.PUBLIC_URL}>
+            <BrowserRouter>
                 <Switch>
                     <App />
                 </Switch>
