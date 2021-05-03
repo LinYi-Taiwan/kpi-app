@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="83" height="83" viewBox="0 0 83 83">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#ff7f2f;stroke-width:4px}
+        </style>
+    </defs>
+    <g id="Group_84" transform="translate(-669 -316)">
+        <g id="Group_51" transform="translate(588.129 -145.871)">
+            <circle id="Ellipse_8" cx="41.5" cy="41.5" r="41.5" fill="#ffe53b" transform="translate(80.871 461.871)"/>
+        </g>
+        <g id="Group_74" transform="translate(585.621 -147.822)">
+            <path id="Line_25" d="M0 0L50.017 0" class="cls-2" transform="translate(100.371 522.661)"/>
+            <g id="Rectangle_40" class="cls-2">
+                <path d="M0 0H12V28H0z" transform="translate(106.379 496.322)"/>
+                <path fill="none" d="M2 2H10V26H2z" transform="translate(106.379 496.322)"/>
+            </g>
+            <path id="Rectangle_41" fill="#ff7f2f" d="M0 0H19V39H0z" transform="translate(124.379 484.822)"/>
+        </g>
+    </g>
+</svg>

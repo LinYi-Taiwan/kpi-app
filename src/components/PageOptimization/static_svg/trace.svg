@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+    <defs>
+        <style>
+            .cls-1{fill:#ffe53b}.cls-4{fill:none;stroke-linecap:round;stroke:#ff7f2f}
+        </style>
+    </defs>
+    <g id="Group_111" transform="translate(-91 -316.823)">
+        <circle id="Ellipse_8" cx="11.5" cy="11.5" r="11.5" class="cls-1" transform="translate(91 316.823)"/>
+        <g id="Group_110" transform="translate(95.397 323.547)">
+            <g id="Path_20" fill="none" stroke="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M-105.376 2926.947s2.816-2.824 5.932-2.862 5.669 2.645 5.97 2.862-2.29 3.258-5.97 3.146a8.39 8.39 0 0 1-5.932-3.146z" transform="translate(106.558 -2920.626)"/>
+                <path fill="#ff7f2f" d="M-99.38 2925.085h-.052c-1.811.022-3.571 1.193-4.519 1.946.821.791 2.413 1.997 4.538 2.063l.168.002c2.118 0 3.779-1.22 4.491-1.94-.902-.768-2.658-2.071-4.625-2.071m0-1c3.087 0 5.607 2.646 5.905 2.862.295.213-2.197 3.149-5.77 3.149-.067 0-.133-.001-.2-.003-3.68-.113-5.932-3.146-5.932-3.146s2.816-2.824 5.932-2.862h.065z" transform="translate(106.558 -2920.626)"/>
+            </g>
+            <circle id="Ellipse_13" cx="2.196" cy="2.196" r="2.196" fill="#ff7f2f" transform="translate(5.224 4.399)"/>
+            <circle id="Ellipse_14" cx=".845" cy=".845" r=".845" class="cls-1" transform="translate(7.926 5.075)"/>
+            <path id="Path_21" d="M-104.01 2923.41s2.778-2.876 6.383-2.876 6.5 2.876 6.5 2.876" class="cls-4" transform="translate(104.694 -2918.601)"/>
+            <path id="Line_38" d="M0 0L1.649 1.374" class="cls-4" transform="translate(0 2.473)"/>
+            <path id="Line_39" d="M0 0L0.824 1.649" class="cls-4" transform="translate(2.748 .824)"/>
+            <path id="Line_40" d="M1.099 0L0 1.511" class="cls-4" transform="translate(9.893 .824)"/>
+            <path id="Line_42" d="M0.021 0L0 1.821" class="cls-4" transform="translate(6.849)"/>
+            <path id="Line_41" d="M1.277 0L0 1.383" class="cls-4" transform="translate(12.738 2.492)"/>
+        </g>
+    </g>
+</svg>
