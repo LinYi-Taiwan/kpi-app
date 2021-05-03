@@ -21,7 +21,7 @@ const PageOptimization = () => {
 
     //function
     const tagClick = (pageName) => {
-        axios.get(`http://localhost:3000/all-score/${pageName}`).then(({ data }) => {
+        axios.get(`https://kpi-node.herokuapp.com/all-score/${pageName}`).then(({ data }) => {
             setPageData(data);
         });
         setOpenModal(true);

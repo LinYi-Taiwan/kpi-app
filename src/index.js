@@ -5,16 +5,16 @@ import App from './App';
 import { store } from './app/store';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter, Switch } from 'react-router-dom';
+import { HashRouter, BrowserRouter, Switch } from 'react-router-dom';
 
 ReactDOM.render(
     <React.StrictMode>
         <Provider store={store}>
-            <BrowserRouter basename={process.env.PUBLIC_URL}>
+            <HashRouter>
                 <Switch>
                     <App />
                 </Switch>
-            </BrowserRouter>
+            </HashRouter>
         </Provider>
     </React.StrictMode>,
     document.getElementById('root')
