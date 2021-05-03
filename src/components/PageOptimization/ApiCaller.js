@@ -5,7 +5,7 @@ const OptimizationDataUrl =
 const IndicatorDataUrl =
     'https://spreadsheets.google.com/feeds/list/1pCvD5tJAirXHWGC4CRDkaLsedSlopYCTkkynSq4RbxI/3/public/values?alt=json';
 
-const PageUrl = 'https://kpi-node.herokuapp.com/all-page-name/all-page-name';
+const PageUrl = 'https://kpi-node.herokuapp.com/all-page-name';
 
 const ApiCaller = (url) => {
     return axios.get(url);
