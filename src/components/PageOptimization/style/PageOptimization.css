@@ -201,6 +201,7 @@
 
 .tag-box {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .tag {
