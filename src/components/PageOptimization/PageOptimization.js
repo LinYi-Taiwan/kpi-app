@@ -1,12 +1,13 @@
 import Form from './Form';
 import MyBarChart from './BarChart';
-import NyLineChart from './LineChart';
+import MyLineChart from './LineChart';
+import Radar from './Radar';
 import AllList from './AllList';
 import DetailModal from './DetailModal';
 import { useState, useEffect } from 'react';
 import './style/PageOptimization.css';
 import axios from 'axios';
-import { FetchOptimizationData, FetchIndicatorData, FetchPage } from './ApiCaller';
+import { FetchOptimizationData, FetchIndicatorData, FetchPage, PageUrl } from './ApiCaller';
 const PageOptimization = () => {
     const [allTasks, setAllTasks] = useState([]); //所有專案優化紀錄
     const [targetTask, setTargetTask] = useState({});
@@ -17,12 +18,17 @@ const PageOptimization = () => {
     const [openModal, setOpenModal] = useState(false); //開啟modal
     const [projectCount, setProjectCount] = useState(0); //累積優化件數
     const [pageName, setPageName] = useState('');
+    const [averageData, setAverageData] = useState({});
 
     //function
     const tagClick = (pageName) => {
-        axios.get(`https://kpi-node.herokuapp.com/all-score/${pageName}`).then(({ data }) => {
+        axios.get(`${PageUrl}/all-score/${pageName}`).then(({ data }) => {
             setPageData(data);
             setPageName(pageName);
+        });
+        axios.get(`${PageUrl}/average-score/${pageName}`).then(({ data }) => {
+            const { _id, ...res } = data[0];
+            setAverageData(res);
         });
         setOpenModal(true);
     };
@@ -38,7 +44,6 @@ const PageOptimization = () => {
             setIndicatorData(data.feed.entry[0].gsx$efficiencyaverage.$t);
         });
         FetchPage.then(({ data }) => {
-            console.log(data);
             setPage(data);
         });
     }, []);
@@ -87,6 +92,7 @@ const PageOptimization = () => {
                                         openModal={openModal}
                                         page={page}
                                         pageData={pageData}
+                                        averageData={averageData}
                                     ></DetailModal>
                                 </div>
                             </div>
@@ -124,7 +130,7 @@ const PageOptimization = () => {
                             <div className="indicator-icon"></div>
                             <div className="inter-title">專案績效分佈</div>
                         </div>
-                        <NyLineChart indicatorData={indicatorData} allTasks={allTasks}></NyLineChart>
+                        <MyLineChart indicatorData={indicatorData} allTasks={allTasks}></MyLineChart>
                     </div>
                 </div>
                 <div className="all-list-container">
