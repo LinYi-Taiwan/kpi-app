@@ -84,7 +84,7 @@
 .rank-icon {
     width: 23px;
     height: 23px;
-    background-image: url('../../PageOptimization/static_svg/speed.svg');
+    background-image: url('../PageOptimization/static_svg/speed.svg');
     background-position: center;
     background-size: cover;
     margin-right: 16.5px;
@@ -137,7 +137,7 @@
     height: 83px;
     margin: 4px 20px 0 0;
     background-size: cover;
-    background: url('../../PageOptimization/static_svg/growth.svg') center;
+    background: url('../PageOptimization/static_svg/growth.svg') center;
 }
 
 .compare-icon {
@@ -145,13 +145,13 @@
     height: 83px;
     margin: 4px 20px 0 0;
     background-size: cover;
-    background: url('../../PageOptimization/static_svg/compare.svg') center;
+    background: url('../PageOptimization/static_svg/compare.svg') center;
 }
 
 .indicator-icon {
     width: 23px;
     height: 23px;
-    background-image: url('../../PageOptimization/static_svg/indicator.svg');
+    background-image: url('../PageOptimization/static_svg/indicator.svg');
     background-position: center;
     background-size: cover;
     margin-right: 16.5px;
@@ -193,7 +193,7 @@
 .trace-icon {
     width: 23px;
     height: 23px;
-    background-image: url('../../PageOptimization/static_svg/trace.svg');
+    background-image: url('../PageOptimization/static_svg/trace.svg');
     background-position: center;
     background-size: cover;
     margin-right: 5px;
@@ -219,7 +219,7 @@
 .accumulate-icon {
     width: 83px;
     height: 83px;
-    background-image: url('../../PageOptimization/static_svg/accumulate.svg');
+    background-image: url('../PageOptimization/static_svg/accumulate.svg');
     background-position: center;
     background-size: cover;
     margin-right: 16.5px;

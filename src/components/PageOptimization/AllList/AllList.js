@@ -1,5 +1,4 @@
 import './style/AllList.css';
-import { Link } from 'react-router-dom';
 
 const AllList = ({ allTasks, setTargetTask }) => {
     return (

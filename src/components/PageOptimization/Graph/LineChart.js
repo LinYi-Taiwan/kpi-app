@@ -1,4 +1,4 @@
-import { ComposedChart, ReferenceLine, Line, Area, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+import { ComposedChart, ReferenceLine, Line, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 const lineChart = ({ allTasks, indicatorData }) => {
     return (
         <ComposedChart

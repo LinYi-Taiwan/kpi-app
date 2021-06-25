@@ -1,5 +1,5 @@
-import PageDetailLineChart from './PageDetailLineChart';
-import MyRadar from './Radar';
+import PageDetailLineChart from '../Graph/PageDetailLineChart';
+import MyRadar from '../Graph/Radar';
 import './style/PageDetailModal.css';
 const DetailModal = ({ pageName, pageData, averageData, openModal, setOpenModal }) => {
     const variable = ['CLS', 'FCP', 'FMP', 'LCP', 'SI', 'TBT'];
