@@ -22,7 +22,6 @@ const PageOptimization = () => {
     const [projectCount, setProjectCount] = useState(0); //累積優化件數
     const [pageName, setPageName] = useState('');
     const [averageData, setAverageData] = useState({});
-
     //function
     const tagClick = (pageName) => {
         getAllScore(pageName).then(({ data }) => {
