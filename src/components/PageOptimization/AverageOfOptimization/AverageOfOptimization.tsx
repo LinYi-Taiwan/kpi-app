@@ -1,4 +1,6 @@
-const AverageOfOptimization = ({ indicatorData }) => {
+import { IAverageOfOptimization } from '../Type';
+
+const AverageOfOptimization = ({ indicatorData }: IAverageOfOptimization) => {
     return (
         <div className="inter">
             <div className="average-icon"></div>

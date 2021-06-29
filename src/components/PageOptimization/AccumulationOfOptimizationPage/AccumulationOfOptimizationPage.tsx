@@ -1,7 +1,5 @@
-type Props = {
-    projectCount: number;
-};
-const AccumulationOfOptimizationPage = ({ projectCount }: Props) => {
+import { IAccumulationOfOptimizationPage } from '../Type';
+const AccumulationOfOptimizationPage = ({ projectCount }: IAccumulationOfOptimizationPage) => {
     return (
         <div className="inter">
             <div className="accumulate-icon"></div>

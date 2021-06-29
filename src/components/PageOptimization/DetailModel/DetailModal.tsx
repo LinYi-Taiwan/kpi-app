@@ -1,7 +1,9 @@
 import PageDetailLineChart from '../Graph/PageDetailLineChart';
 import MyRadar from '../Graph/Radar';
 import './style/PageDetailModal.css';
-const DetailModal = ({ pageName, pageData, averageData, openModal, setOpenModal }) => {
+import { IDetailModal } from '../Type';
+
+const DetailModal = ({ pageName, pageData, averageData, openModal, setOpenModal }: IDetailModal) => {
     const variable = ['CLS', 'FCP', 'FMP', 'LCP', 'SI', 'TBT'];
 
     return (

@@ -1,22 +1,7 @@
 import './style/AllList.css';
-import { Dispatch, SetStateAction } from 'react';
+import { AllListType } from '../Type';
 
-type TaskInner = {
-    $t: string;
-};
-
-type Task = {
-    gsx$pagename: TaskInner;
-    gsx$efficiency: TaskInner;
-    gsx$createtime: TaskInner;
-};
-
-type Props = {
-    allTasks: Array<Task>;
-    setTargetTask?: Dispatch<SetStateAction<Array<any>>>;
-};
-
-const AllList = ({ allTasks, setTargetTask }: Props) => {
+const AllList = ({ allTasks, setTargetTask }: AllListType) => {
     return (
         <div className="list-box">
             {allTasks.map((task, index) => (

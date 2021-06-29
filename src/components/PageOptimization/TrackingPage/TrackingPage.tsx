@@ -1,4 +1,6 @@
-const TrackingPage = ({ page, tagClick }) => {
+import { ITrackingPage } from '../Type';
+
+const TrackingPage = ({ page, tagClick }: ITrackingPage) => {
     return (
         <div className="inter">
             <div className="trace-icon"></div>

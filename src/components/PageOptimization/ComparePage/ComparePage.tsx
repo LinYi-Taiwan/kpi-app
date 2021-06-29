@@ -1,4 +1,5 @@
-const ComparePage = ({ mostEfficientPage }) => {
+import { IComparePage } from '../Type';
+const ComparePage = ({ mostEfficientPage }: IComparePage) => {
     return (
         <div className="inter">
             <div className="compare-icon"></div>

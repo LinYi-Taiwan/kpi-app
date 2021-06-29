@@ -1,4 +1,6 @@
-const RankOfPage = ({ allTasks }) => {
+import { AllListType } from '../Type';
+
+const RankOfPage = ({ allTasks }: AllListType) => {
     return (
         <div className="page-count">
             <div className="title">
