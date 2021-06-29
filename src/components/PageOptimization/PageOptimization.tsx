@@ -10,19 +10,19 @@ import RankOfPage from './RankOfPage/RankOfPage';
 import TrackingPage from './TrackingPage/TrackingPage';
 import { FetchOptimizationData, FetchIndicatorData, FetchPage, getAllScore, getAverageScore } from './ApiCaller';
 //import Type
-import { ValueIsNumber, Task } from './Type';
+import { IValueIsNumber, ITask, IPage } from './Type';
 
 const PageOptimization = () => {
-    const [allTasks, setAllTasks] = useState<Task[]>([]); //所有專案優化紀錄
+    const [allTasks, setAllTasks] = useState<ITask[]>([]); //所有專案優化紀錄
     // const [targetTask, setTargetTask] = useState({});
     const [indicatorData, setIndicatorData] = useState<number>(0); //指標數字，如：效能平均
-    const [page, setPage] = useState([]); //所有的監控頁面
-    const [pageData, setPageData] = useState<ValueIsNumber[]>([]); //監控頁面詳細數字，如：FCP、TTB等
-    const [mostEfficientPage, setMostEfficientPage] = useState(''); //優化效率最高值
+    const [page, setPage] = useState<IPage>([]); //所有的監控頁面
+    const [pageData, setPageData] = useState<IValueIsNumber[]>([]); //監控頁面詳細數字，如：FCP、TTB等
+    const [mostEfficientPage, setMostEfficientPage] = useState<string>(''); //優化效率最高值
     const [openModal, setOpenModal] = useState<boolean>(false); //開啟modal
     const [projectCount, setProjectCount] = useState<number>(0); //累積優化件數
     const [pageName, setPageName] = useState<string>('');
-    const [averageData, setAverageData] = useState<ValueIsNumber>({});
+    const [averageData, setAverageData] = useState<IValueIsNumber>({});
     //function
     const tagClick = (pageName: string) => {
         getAllScore(pageName).then(({ data }) => {

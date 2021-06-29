@@ -1,31 +1,31 @@
 import { Dispatch, SetStateAction } from 'react';
 
 //Common Type
-export type ValueIsNumber = {
+export type IValueIsNumber = {
     [index: string]: number;
 };
 
-//AllList.tsx
+//AllList.tsx & RankOfPage
 type TaskInner = {
     $t: string;
 };
 
-export type Task = {
+export type ITask = {
     gsx$pagename: TaskInner;
     gsx$efficiency: TaskInner;
     gsx$createtime: TaskInner;
 };
 
 export type AllListType = {
-    allTasks: Task[];
+    allTasks: ITask[];
     setTargetTask?: Dispatch<SetStateAction<Array<any>>>;
 };
 
 //DetailModal.tsx
 export type IDetailModal = {
     pageName: string;
-    pageData: ValueIsNumber[];
-    averageData: ValueIsNumber;
+    pageData: IValueIsNumber[];
+    averageData: IValueIsNumber;
     openModal: boolean;
     setOpenModal: Dispatch<SetStateAction<boolean>>;
 };
@@ -41,13 +41,13 @@ export type IAverageOfOptimization = {
 };
 
 //TrackingPage.tsx
-type Page = {
+export type IPage = {
     pageName: string;
     name: string;
 }[];
 
 export type ITrackingPage = {
-    page: Page;
+    page: IPage;
     tagClick(page: string): void;
 };
 
