@@ -1,0 +1,9 @@
+@import '../mixin';
+@import '../fixed/inter';
+
+.compare-icon {
+    @include background-image('../PageOptimization/static_svg/compare.svg');
+    width: 83px;
+    height: 83px;
+    margin: 4px 20px 0 0;
+}

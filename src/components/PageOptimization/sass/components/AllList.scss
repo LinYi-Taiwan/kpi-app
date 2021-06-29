@@ -1,15 +1,15 @@
-/* .list-box {
+@import '../mixin';
+
+.list-box {
     margin-left: 35px;
     width: 100%;
     height: 100%;
 }
 
 .text {
+    @include font-group($font-size: 20px, $font-weight: bold);
     width: 100%;
     height: 24px;
-    font-family: CenturyGothic;
-    font-size: 20px;
-    font-weight: bold;
     text-align: left;
     color: #fcfcfc;
     text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
@@ -35,10 +35,9 @@
 }
 
 .create-time {
+    @include font-group($font-size: 12px, $font-weight: normal);
     width: 100%;
     height: 16px;
-    font-family: CenturyGothic;
-    font-size: 12px;
     text-align: right;
     color: #fcfcfc;
-} */
+}
