@@ -1,0 +1,8 @@
+@import '../sass/fixed/inter';
+
+.indicator-icon {
+    @include background-image($image-url: '../static_svg/indicator.svg');
+    width: 23px;
+    height: 23px;
+    margin-right: 16.5px;
+}

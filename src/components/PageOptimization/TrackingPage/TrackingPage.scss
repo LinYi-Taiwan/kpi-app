@@ -1,0 +1,24 @@
+@import '../sass/mixin';
+
+.trace-icon {
+    @include background-image($image-url: '../static_svg/trace.svg');
+    width: 23px;
+    height: 23px;
+    margin-right: 5px;
+}
+
+.tag-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag {
+    @include font-group($font-size: 12px, $font-weight: normal);
+    width: auto;
+    margin: 4px 6px 0 0;
+    padding: 1.5px 5px;
+    border-radius: 4px;
+    background-color: rgba(255, 145, 0, 0.65);
+    color: #fcfcfc;
+    cursor: pointer;
+}

@@ -1,9 +1,0 @@
-@import '../mixin';
-@import '../fixed/inter';
-
-.accumulate-icon {
-    @include background-image('../PageOptimization/static_svg/accumulate.svg');
-    width: 83px;
-    height: 83px;
-    margin-right: 16.5px;
-}

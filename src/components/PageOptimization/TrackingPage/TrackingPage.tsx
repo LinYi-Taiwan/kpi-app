@@ -1,5 +1,5 @@
 import { ITrackingPage } from '../Type';
-
+import './TrackingPage.scss';
 const TrackingPage = ({ page, tagClick }: ITrackingPage) => {
     return (
         <div className="inter">

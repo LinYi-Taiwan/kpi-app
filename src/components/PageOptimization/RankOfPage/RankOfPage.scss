@@ -1,0 +1,62 @@
+@import '../sass/mixin';
+
+.page-count {
+    width: 258.5px;
+    height: 282px;
+    padding: 12px 18.5px 18px 17px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fcfcfc;
+}
+
+.title {
+    display: flex;
+    margin-bottom: 19px;
+}
+
+.title-text {
+    @include font-group($font-size: 16px, $font-weight: bold);
+    color: #707070;
+}
+
+.rank-icon {
+    @include background-image($image-url: '../static_svg/speed.svg');
+    width: 23px;
+    height: 23px;
+    margin-right: 16.5px;
+}
+
+.rank-content {
+    position: relative;
+    display: flex;
+    height: 22px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.rank-num {
+    @include font-group($font-size: 18px, $font-weight: bold);
+    width: 10px;
+    height: 22px;
+    margin-left: 7px;
+    text-align: left;
+}
+
+.rank-name {
+    @include font-group($font-size: 14px, $font-weight: bold);
+    height: 17px;
+    text-align: left;
+    margin: 0 56px 0 22.5px;
+    line-height: 22px;
+}
+
+.rank-score {
+    @include font-group($font-size: 12px, $font-weight: normal);
+    position: absolute;
+    right: 0;
+    height: 16px;
+    text-align: left;
+    color: #707070;
+    margin: auto 0;
+    line-height: 22px;
+}

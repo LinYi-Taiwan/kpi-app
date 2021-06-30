@@ -1,4 +1,6 @@
 import { IAccumulationOfOptimizationPage } from '../Type';
+import './AccumulationOfOptimization.scss';
+
 const AccumulationOfOptimizationPage = ({ projectCount }: IAccumulationOfOptimizationPage) => {
     return (
         <div className="inter">

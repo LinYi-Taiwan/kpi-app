@@ -1,4 +1,5 @@
 import { IComparePage } from '../Type';
+import './ComparePage.scss';
 const ComparePage = ({ mostEfficientPage }: IComparePage) => {
     return (
         <div className="inter">

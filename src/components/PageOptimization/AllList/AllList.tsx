@@ -1,4 +1,4 @@
-import './style/AllList.css';
+import './AllList.scss';
 import { AllListType } from '../Type';
 
 const AllList = ({ allTasks, setTargetTask }: AllListType) => {

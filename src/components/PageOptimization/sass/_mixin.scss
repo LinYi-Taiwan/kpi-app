@@ -1,7 +1,6 @@
 //common
 
 $font-type: CenturyGothic;
-$font-size: 14px;
 
 @mixin font-group($font-size, $font-weight) {
     font-size: $font-size;

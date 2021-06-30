@@ -1,5 +1,5 @@
 import { IAverageOfOptimization } from '../Type';
-
+import './AverageOfOptimization.scss';
 const AverageOfOptimization = ({ indicatorData }: IAverageOfOptimization) => {
     return (
         <div className="inter">

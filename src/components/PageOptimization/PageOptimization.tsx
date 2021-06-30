@@ -1,13 +1,13 @@
-import MyLineChart from './Graph/LineChart';
 import AllList from './AllList/AllList';
 import DetailModal from './DetailModel/DetailModal';
 import { useState, useEffect } from 'react';
-import './PageOptimization.css';
+import './PageOptimization.scss';
 import AccumulationOfOptimizationPage from './AccumulationOfOptimizationPage/AccumulationOfOptimizationPage';
 import AverageOfOptimization from './AverageOfOptimization/AverageOfOptimization';
 import ComparePage from './ComparePage/ComparePage';
 import RankOfPage from './RankOfPage/RankOfPage';
 import TrackingPage from './TrackingPage/TrackingPage';
+import ProjectDistribution from './ProjectDistribution/ProjectDistribution';
 import { FetchOptimizationData, FetchIndicatorData, FetchPage, getAllScore, getAverageScore } from './ApiCaller';
 //import Type
 import { IValueIsNumber, ITask, IPage } from './Type';
@@ -71,11 +71,7 @@ const PageOptimization = () => {
                         <RankOfPage allTasks={allTasks}></RankOfPage>
                     </div>
                     <div className="line-chart-container">
-                        <div className="inter">
-                            <div className="indicator-icon"></div>
-                            <div className="inter-title">專案績效分佈</div>
-                        </div>
-                        <MyLineChart indicatorData={indicatorData} allTasks={allTasks}></MyLineChart>
+                        <ProjectDistribution indicatorData={indicatorData} allTasks={allTasks}></ProjectDistribution>
                     </div>
                 </div>
                 <div className="all-list-container">

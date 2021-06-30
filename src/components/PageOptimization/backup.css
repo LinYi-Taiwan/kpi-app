@@ -1,4 +1,4 @@
-.container {
+/* .container {
     width: 100%;
     max-width: 1250px;
     margin: auto;
@@ -44,19 +44,19 @@
 
 .graph-up {
     display: flex;
-}
+} */
 /* 排名、分數類別的大型組件 */
-.page-count {
+/* .page-count {
     width: 258.5px;
     height: 282px;
     padding: 12px 18.5px 18px 17px;
     border-radius: 10px;
     box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
     background-color: #fcfcfc;
-}
+} */
 
 /* 指標性分數的小型組件 */
-.indicator {
+/* .indicator {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -69,27 +69,27 @@
     border-radius: 10px;
     box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
     background-color: #fcfcfc;
-}
-.title {
+} */
+/* .title {
     display: flex;
     margin-bottom: 19px;
-}
-.title div {
+} */
+/* .title div {
     font-family: CenturyGothic;
     font-weight: bold;
     font-size: 16px;
     color: #707070;
-}
+} */
 
-.rank-icon {
+/* .rank-icon {
     width: 23px;
     height: 23px;
     background-image: url('../PageOptimization/static_svg/speed.svg');
     background-position: center;
     background-size: cover;
     margin-right: 16.5px;
-}
-
+} */
+/* 
 .rank-content {
     position: relative;
     display: flex;
@@ -128,7 +128,7 @@
     color: #707070;
     margin: auto 0;
     line-height: 22px;
-}
+} */
 /* .inter {
     padding: 20px 0 20px 25px;
 } */
@@ -148,14 +148,14 @@
     background: url('../PageOptimization/static_svg/compare.svg') center;
 } */
 
-.indicator-icon {
+/* .indicator-icon {
     width: 23px;
     height: 23px;
     background-image: url('../PageOptimization/static_svg/indicator.svg');
     background-position: center;
     background-size: cover;
     margin-right: 16.5px;
-}
+} */
 /* 
 .inter {
     display: flex;
@@ -190,7 +190,7 @@
     color: #a29d9d;
 } */
 
-.trace-icon {
+/* .trace-icon {
     width: 23px;
     height: 23px;
     background-image: url('../PageOptimization/static_svg/trace.svg');
@@ -214,7 +214,7 @@
     font-size: 12px;
     color: #fcfcfc;
     cursor: pointer;
-}
+} */
 
 /* .accumulate-icon {
     width: 83px;

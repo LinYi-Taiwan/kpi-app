@@ -1,5 +1,5 @@
 import { AllListType } from '../Type';
-
+import './RankOfPage.scss';
 const RankOfPage = ({ allTasks }: AllListType) => {
     return (
         <div className="page-count">

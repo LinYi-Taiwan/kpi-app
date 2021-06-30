@@ -56,3 +56,10 @@ export type ITrackingPage = {
 export type IAccumulationOfOptimizationPage = {
     projectCount: number;
 };
+
+//ProjectDistribution
+
+export type IProjectDistributionProps = {
+    indicatorData: number;
+    allTasks: ITask[];
+};
