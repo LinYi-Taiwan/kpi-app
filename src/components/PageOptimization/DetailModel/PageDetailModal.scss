@@ -2,6 +2,9 @@
 
 .modal-box {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 0;
     left: 0;
     width: 100%;
@@ -10,18 +13,21 @@
 
     .page-detail-modal {
         display: flex;
-        flex-wrap: wrap;
-        position: absolute;
+        position: relative;
         width: 90%;
-        height: 80%;
-        top: 0;
-        left: 0;
-        padding-left: 5%;
-        margin: 100px 10px 2px 60px;
+        height: 90%;
+        padding: 0 30px;
+        margin: 2% auto;
         border-radius: 10px;
         box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
         background-color: #fcfcfc;
         z-index: 9999;
+
+        .page-name {
+            @include font-group($font-size: 30px, $font-weight: bold);
+            color: #707070;
+            margin: 20px 0;
+        }
 
         .cancel-icon {
             @include background-image($image-url: '../static_svg/cancel.svg');
@@ -35,9 +41,8 @@
         }
 
         .overall {
-            width: 30%;
-            height: 50%;
-            padding: 20px;
+            width: fit-content;
+            height: auto;
 
             .main {
                 @include font-group($font-size: 20px, $font-weight: bold);
@@ -47,33 +52,41 @@
                 color: #707070;
                 margin: 25px 0 0 10px;
             }
+            .radar {
+                width: 44.8vh;
+                height: 44.8vh;
+                margin-top: 51px;
+            }
         }
 
         .graph-box {
             display: flex;
             flex-wrap: wrap;
-            width: 60%;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
             height: 100%;
-            margin: auto 0;
-            position: absolute;
-            right: 0;
-            margin-top: 2%;
+
+            .graph-container {
+                width: 45%;
+                height: calc((100% / 3) - 60px);
+                margin: 0 2.5%;
+            }
         }
     }
 }
 
 .graph-text {
     @include font-group($font-size: 16px, $font-weight: normal);
-    width: 157px;
+    width: auto;
     height: 20px;
     color: #707070;
     margin-bottom: 5px;
 }
 
 .graph-content {
-    width: 23vw;
-    height: 145px;
-    margin: 0 17px 39px 0;
+    width: 100%;
+    height: calc(100% - 20px);
     border-radius: 10px;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     background-color: #ffffff;

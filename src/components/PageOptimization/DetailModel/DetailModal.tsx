@@ -10,14 +10,17 @@ const DetailModal = ({ pageName, pageData, averageData, openModal, setOpenModal 
         <div className="modal-box" style={{ display: openModal ? 'block' : 'none' }}>
             <div className="page-detail-modal">
                 <div className="cancel-icon" onClick={() => setOpenModal(false)}></div>
-
                 <div className="overall">
-                    <div className="main">{pageName}</div>
-                    <MyRadar averageData={averageData}></MyRadar>
+                    <div className="page-name">{pageName}</div>
+                    <div>time select</div>
+                    <div className="radar">
+                        <MyRadar averageData={averageData}></MyRadar>
+                    </div>
                 </div>
+
                 <div className="graph-box">
                     {variable.map((item, index) => (
-                        <div key={index}>
+                        <div className="graph-container" key={index}>
                             <div className="graph-text">{item}</div>
                             <div className="graph-content">
                                 <PageDetailLineChart pageData={pageData} indicatorName={item}></PageDetailLineChart>

@@ -1,4 +1,13 @@
-import { Radar, RadarChart, PolarGrid, Legend, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer } from 'recharts';
+import {
+    Radar,
+    RadarChart,
+    PolarGrid,
+    Legend,
+    PolarAngleAxis,
+    PolarRadiusAxis,
+    ResponsiveContainer,
+    Label,
+} from 'recharts';
 
 const radar = ({ averageData }) => {
     let data = [];
@@ -10,10 +19,16 @@ const radar = ({ averageData }) => {
     return (
         <ResponsiveContainer width="100%" height="100%">
             <RadarChart outerRadius="80%" data={data}>
-                <PolarGrid />
-                <PolarAngleAxis dataKey="name" />
+                <PolarGrid stroke="#ffb135" />
+                <PolarAngleAxis tick={{ fill: '#707070' }} dataKey="name" color="#707070" />
                 <PolarRadiusAxis angle={30} domain={[0, 1]} />
-                <Radar name="Average" dataKey="score" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
+                <Radar
+                    name="Average"
+                    dataKey="score"
+                    stroke="#fdd38f"
+                    fill="rgba(255, 229, 59, 0.5)"
+                    // fillOpacity={0.6}
+                />
                 <Legend />
             </RadarChart>
         </ResponsiveContainer>
