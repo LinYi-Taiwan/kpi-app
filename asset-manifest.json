@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/kpi-app/static/css/main.baa35306.chunk.css",
-    "main.js": "/kpi-app/static/js/main.b1bebdd4.chunk.js",
-    "main.js.map": "/kpi-app/static/js/main.b1bebdd4.chunk.js.map",
+    "main.css": "/kpi-app/static/css/main.ed534c48.chunk.css",
+    "main.js": "/kpi-app/static/js/main.4ecac2b6.chunk.js",
+    "main.js.map": "/kpi-app/static/js/main.4ecac2b6.chunk.js.map",
     "runtime-main.js": "/kpi-app/static/js/runtime-main.0f4e2286.js",
     "runtime-main.js.map": "/kpi-app/static/js/runtime-main.0f4e2286.js.map",
-    "static/js/2.ac703d17.chunk.js": "/kpi-app/static/js/2.ac703d17.chunk.js",
-    "static/js/2.ac703d17.chunk.js.map": "/kpi-app/static/js/2.ac703d17.chunk.js.map",
+    "static/js/2.819c8c7b.chunk.js": "/kpi-app/static/js/2.819c8c7b.chunk.js",
+    "static/js/2.819c8c7b.chunk.js.map": "/kpi-app/static/js/2.819c8c7b.chunk.js.map",
     "index.html": "/kpi-app/index.html",
-    "static/css/main.baa35306.chunk.css.map": "/kpi-app/static/css/main.baa35306.chunk.css.map",
-    "static/js/2.ac703d17.chunk.js.LICENSE.txt": "/kpi-app/static/js/2.ac703d17.chunk.js.LICENSE.txt",
+    "static/css/main.ed534c48.chunk.css.map": "/kpi-app/static/css/main.ed534c48.chunk.css.map",
+    "static/js/2.819c8c7b.chunk.js.LICENSE.txt": "/kpi-app/static/js/2.819c8c7b.chunk.js.LICENSE.txt",
     "static/media/AccumulationOfOptimization.scss": "/kpi-app/static/media/accumulate.a9e6cb7a.svg",
     "static/media/PageDetailModal.scss": "/kpi-app/static/media/cancel.b067d6f9.svg",
     "static/media/ComparePage.scss": "/kpi-app/static/media/compare.2caddf7b.svg",
@@ -20,8 +20,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.0f4e2286.js",
-    "static/js/2.ac703d17.chunk.js",
-    "static/css/main.baa35306.chunk.css",
-    "static/js/main.b1bebdd4.chunk.js"
+    "static/js/2.819c8c7b.chunk.js",
+    "static/css/main.ed534c48.chunk.css",
+    "static/js/main.4ecac2b6.chunk.js"
   ]
 }
