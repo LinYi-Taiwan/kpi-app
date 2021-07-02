@@ -55,7 +55,7 @@ const PageOptimization = () => {
         <div className="container">
             <div className="topic">Optimization</div>
 
-            <div className="page-optimization">
+            <div className="page-optimization" style={{ position: openModal ? 'fixed' : 'relative' }}>
                 {/* <Form allTasks={allTasks} setAllTasks={setAllTasks}></Form> */}
                 {/* <MyBarChart allTasks={allTasks} targetTask={targetTask}></MyBarChart> */}
                 <div>

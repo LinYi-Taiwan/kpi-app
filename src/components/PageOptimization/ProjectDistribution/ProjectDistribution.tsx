@@ -8,7 +8,9 @@ const ProjectDistribution = ({ indicatorData, allTasks }: IProjectDistributionPr
                 <div className="indicator-icon"></div>
                 <div className="inter-title">專案績效分佈</div>
             </div>
-            <MyLineChart indicatorData={indicatorData} allTasks={allTasks}></MyLineChart>
+            <div className="compose-chart-container">
+                <MyLineChart indicatorData={indicatorData} allTasks={allTasks}></MyLineChart>
+            </div>
         </div>
     );
 };

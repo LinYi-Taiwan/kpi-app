@@ -1,6 +1,9 @@
 @import '../sass/mixin';
 
 .modal-box {
+    @include breakpoint(mobile) {
+        height: fit-content;
+    }
     position: absolute;
     display: flex;
     justify-content: center;
@@ -12,6 +15,12 @@
     background-color: rgba(0, 0, 0, 0.2);
 
     .page-detail-modal {
+        @include breakpoint(mobile) {
+            flex-wrap: wrap;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
         display: flex;
         position: relative;
         width: 90%;
@@ -25,6 +34,9 @@
 
         .page-name {
             @include font-group($font-size: 30px, $font-weight: bold);
+            @include breakpoint(mobile) {
+                font-size: 20px;
+            }
             color: #707070;
             margin: 20px 0;
         }
@@ -41,6 +53,9 @@
         }
 
         .overall {
+            @include breakpoint(mobile) {
+                width: 100%;
+            }
             width: fit-content;
             height: auto;
 
@@ -53,6 +68,10 @@
                 margin: 25px 0 0 10px;
             }
             .radar {
+                @include breakpoint(mobile) {
+                    width: 70vw;
+                    margin: auto;
+                }
                 width: 44.8vh;
                 height: 44.8vh;
                 margin-top: 51px;
@@ -68,6 +87,11 @@
             height: 100%;
 
             .graph-container {
+                @include breakpoint(mobile) {
+                    width: 100%;
+                    height: 180px;
+                    margin: 20px 0;
+                }
                 width: 45%;
                 height: calc((100% / 3) - 60px);
                 margin: 0 2.5%;

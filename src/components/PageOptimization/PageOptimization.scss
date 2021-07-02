@@ -5,6 +5,10 @@
     flex-direction: column;
     justify-content: space-between;
     margin-right: 20px;
+    @include breakpoint(mobile) {
+        width: 100%;
+        margin: 0;
+    }
 }
 
 .indicator > div {
@@ -13,6 +17,10 @@
     border-radius: 10px;
     box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
     background-color: #fcfcfc;
+    @include breakpoint(mobile) {
+        width: 90%;
+        margin: 0 auto 10px;
+    }
 }
 
 .container {
@@ -23,6 +31,9 @@
 
 .topic {
     @include font-group($font-size: 28px, $font-weight: bold);
+    @include breakpoint(mobile) {
+        margin: 10px auto;
+    }
     width: 171px;
     height: 34px;
     -webkit-text-stroke: 1px #707070;
@@ -33,6 +44,10 @@
 
 .page-optimization {
     display: flex;
+    width: 100%;
+    @include breakpoint(mobile) {
+        flex-wrap: wrap;
+    }
 }
 
 .all-list-container {
@@ -55,8 +70,21 @@
     box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
     background-color: #fcfcfc;
     margin-top: 20px;
+    @include breakpoint(mobile) {
+        width: 90%;
+        margin: 10px auto;
+    }
 }
 
 .graph-up {
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    @include breakpoint(mobile) {
+        justify-content: center;
+        margin-right: 0;
+        .graph-up .indicator {
+            width: 100%;
+        }
+    }
 }
