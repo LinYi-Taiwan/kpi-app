@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/kpi-app/static/css/main.ed534c48.chunk.css",
-    "main.js": "/kpi-app/static/js/main.4ecac2b6.chunk.js",
-    "main.js.map": "/kpi-app/static/js/main.4ecac2b6.chunk.js.map",
+    "main.css": "/kpi-app/static/css/main.e57516f5.chunk.css",
+    "main.js": "/kpi-app/static/js/main.c7010755.chunk.js",
+    "main.js.map": "/kpi-app/static/js/main.c7010755.chunk.js.map",
     "runtime-main.js": "/kpi-app/static/js/runtime-main.0f4e2286.js",
     "runtime-main.js.map": "/kpi-app/static/js/runtime-main.0f4e2286.js.map",
     "static/js/2.819c8c7b.chunk.js": "/kpi-app/static/js/2.819c8c7b.chunk.js",
     "static/js/2.819c8c7b.chunk.js.map": "/kpi-app/static/js/2.819c8c7b.chunk.js.map",
     "index.html": "/kpi-app/index.html",
-    "static/css/main.ed534c48.chunk.css.map": "/kpi-app/static/css/main.ed534c48.chunk.css.map",
+    "static/css/main.e57516f5.chunk.css.map": "/kpi-app/static/css/main.e57516f5.chunk.css.map",
     "static/js/2.819c8c7b.chunk.js.LICENSE.txt": "/kpi-app/static/js/2.819c8c7b.chunk.js.LICENSE.txt",
     "static/media/AccumulationOfOptimization.scss": "/kpi-app/static/media/accumulate.a9e6cb7a.svg",
     "static/media/PageDetailModal.scss": "/kpi-app/static/media/cancel.b067d6f9.svg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.0f4e2286.js",
     "static/js/2.819c8c7b.chunk.js",
-    "static/css/main.ed534c48.chunk.css",
-    "static/js/main.4ecac2b6.chunk.js"
+    "static/css/main.e57516f5.chunk.css",
+    "static/js/main.c7010755.chunk.js"
   ]
 }
