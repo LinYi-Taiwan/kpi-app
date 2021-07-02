@@ -2,7 +2,7 @@
 
 .modal-box {
     @include breakpoint(mobile) {
-        height: fit-content;
+        height: initial;
     }
     position: absolute;
     display: flex;
