@@ -79,10 +79,10 @@
 .graph-up {
     display: flex;
     width: 100%;
-    flex-wrap: wrap;
     @include breakpoint(mobile) {
         justify-content: center;
         margin-right: 0;
+        flex-wrap: wrap;
         .graph-up .indicator {
             width: 100%;
         }
